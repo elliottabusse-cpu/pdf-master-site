@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PDF Master — L'outil PDF tout-en-un pour Mac</title>
-  <meta name="description" content="PDF Master est une application macOS gratuite pour fusionner, diviser, convertir, compresser et éditer vos fichiers PDF." />
+  <title>PDF Master — L'outil PDF tout-en-un pour Mac et Windows</title>
+  <meta name="description" content="PDF Master est une application gratuite pour Mac et Windows pour fusionner, diviser, convertir, compresser et éditer vos fichiers PDF." />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -90,6 +90,16 @@
       transition: background 0.2s, transform 0.15s;
     }
     .btn-primary:hover { background: var(--accent-hover); transform: scale(1.03); }
+    .btn-secondary {
+      display: inline-block;
+      background: transparent; color: var(--accent);
+      text-decoration: none; padding: 16px 36px;
+      border-radius: 980px; font-size: 17px; font-weight: 600;
+      border: 2px solid var(--accent);
+      transition: background 0.2s, color 0.2s, transform 0.15s;
+    }
+    .btn-secondary:hover { background: var(--accent); color: #fff; transform: scale(1.03); }
+    .btn-group { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
     .hero-meta { margin-top: 14px; font-size: 13px; color: var(--muted); }
 
     /* ── GATEKEEPER NOTICE ── */
@@ -196,9 +206,12 @@
     <img src="icon.png" alt="PDF Master" />
     <span>PDF Master</span>
   </a>
-  <div class="nav-dl">
+  <div class="nav-dl" style="display:flex;gap:10px;">
     <a href="https://github.com/elliottabusse-cpu/pdf-master-updates/releases/download/v1.1.0/PDF.Master.pkg">
-      Télécharger
+      Mac
+    </a>
+    <a href="https://github.com/elliottabusse-cpu/pdf-master-source/releases/download/v1.1.0/PDF.Master.Setup.exe" style="background:#5856d6;">
+      Windows
     </a>
   </div>
 </nav>
@@ -207,17 +220,24 @@
 <section class="hero">
   <img class="hero-icon" src="icon.png" alt="PDF Master" />
   <h1>Tout ce dont vous avez<br>besoin pour vos PDF.</h1>
-  <p>Fusionner, diviser, convertir, compresser, réorganiser — PDF Master fait tout, gratuitement, sur votre Mac.</p>
-  <a class="btn-primary"
-     href="https://github.com/elliottabusse-cpu/pdf-master-updates/releases/download/v1.1.0/PDF.Master.pkg">
-    Télécharger gratuitement
-  </a>
-  <p class="hero-meta">v1.1.0 · macOS · Gratuit · Installeur .pkg</p>
+  <p>Fusionner, diviser, convertir, compresser, réorganiser — PDF Master fait tout, gratuitement, sur Mac et Windows.</p>
+  <div class="btn-group">
+    <a class="btn-primary"
+       href="https://github.com/elliottabusse-cpu/pdf-master-updates/releases/download/v1.1.0/PDF.Master.pkg">
+      Télécharger pour Mac
+    </a>
+    <a class="btn-secondary"
+       href="https://github.com/elliottabusse-cpu/pdf-master-source/releases/download/v1.1.0/PDF.Master.Setup.exe"
+       style="border-color:#5856d6;color:#5856d6;">
+      Télécharger pour Windows
+    </a>
+  </div>
+  <p class="hero-meta">v1.1.0 · macOS &amp; Windows · Gratuit</p>
 </section>
 
-<!-- GATEKEEPER NOTICE -->
-<div style="padding: 0 24px;">
-  <div class="notice">
+<!-- NOTICES -->
+<div style="padding: 0 24px; display:flex; flex-direction:column; gap:16px; max-width:680px; margin:0 auto 60px;">
+  <div class="notice" style="margin:0;">
     <p class="notice-title">⚠️ Premier lancement — avertissement macOS</p>
     <ol>
       <li>Double-cliquez sur <strong>PDF.Master.pkg</strong> pour lancer l'installation.</li>
@@ -226,11 +246,20 @@
       <li>L'app s'installe dans <code>/Applications</code> et s'ouvre normalement. Cette étape n'est requise qu'une seule fois.</li>
     </ol>
   </div>
+  <div class="notice" style="margin:0;">
+    <p class="notice-title">⚠️ Premier lancement — avertissement Windows</p>
+    <ol>
+      <li>Double-cliquez sur <strong>PDF.Master.Setup.exe</strong> pour lancer l'installation.</li>
+      <li>Si Windows affiche "Windows a protégé votre PC", cliquez <strong>Informations complémentaires</strong>.</li>
+      <li>Cliquez ensuite <strong>"Exécuter quand même"</strong>.</li>
+      <li>L'app s'installe et se lance automatiquement. Cette étape n'est requise qu'une seule fois.</li>
+    </ol>
+  </div>
 </div>
 
 <!-- FEATURES -->
 <div class="section-title">
-  <h2>Conçu pour Mac.</h2>
+  <h2>Conçu pour Mac et Windows.</h2>
   <p>Une interface native, rapide et élégante.</p>
 </div>
 <section class="features">
@@ -284,10 +313,17 @@
 <section class="cta">
   <h2>Prêt à simplifier vos PDF ?</h2>
   <p>Gratuit, sans inscription, sans limite.</p>
-  <a class="btn-primary"
-     href="https://github.com/elliottabusse-cpu/pdf-master-updates/releases/download/v1.1.0/PDF.Master.pkg">
-    Télécharger PDF Master
-  </a>
+  <div class="btn-group">
+    <a class="btn-primary"
+       href="https://github.com/elliottabusse-cpu/pdf-master-updates/releases/download/v1.1.0/PDF.Master.pkg">
+      Télécharger pour Mac
+    </a>
+    <a class="btn-secondary"
+       href="https://github.com/elliottabusse-cpu/pdf-master-source/releases/download/v1.1.0/PDF.Master.Setup.exe"
+       style="border-color:#5856d6;color:#5856d6;">
+      Télécharger pour Windows
+    </a>
+  </div>
 </section>
 
 <!-- FOOTER -->
